@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify, render_template
 app = Flask(__name__)
 
 backend_host = os.getenv("BACKEND_HOST", "localhost")
-backend_port = os.getenv("BACKEND_PORT", 8080)
+backend_port = os.getenv("BACKEND_PORT", 8081)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -57,4 +57,4 @@ def create_user(id, name):
         
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=8000)
+    app.run(debug=True, host="0.0.0.0", port=8080)
