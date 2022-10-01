@@ -4,7 +4,8 @@ EXPOSE 8000
 
 WORKDIR /opt
 
-COPY ./src .
+COPY frontend.py .
+COPY requirements.txt . 
 
 RUN pip3 install -r ./frontend/requirements.txt
 
