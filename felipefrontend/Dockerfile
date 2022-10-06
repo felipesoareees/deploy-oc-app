@@ -1,6 +1,4 @@
-FROM ubuntu:16.04
-
-RUN apt-get update && update-get install python python-pip
+FROM python:3.8
 
 RUN pip install flask
 
